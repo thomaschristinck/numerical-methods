@@ -4,7 +4,8 @@ function [y] = test_q3()
     % Integrals are specified in the report (see report question 3).
 
     disp('----------------------- Even integrals --------------------')
-    disp("Integral of sin(x) from 0 to 1 is 0.45970")
+    disp("Integral of sin(x) from 0 to 1 (should evaluate to 0.45970)")
+    fprintf("\n")
     error_list_a = cell(10, 2);
     for i = 1:20 
         target = 0.45970;
@@ -15,7 +16,6 @@ function [y] = test_q3()
 
     % Plot error graph
     errors_a = cell2mat(error_list_a);
-    fprintf('\n Plotting graph for Error a... \n ')
     figure(1)
     plot(errors_a(:, 1), errors_a(:,2))
     xlabel('log(N)') 
@@ -23,7 +23,9 @@ function [y] = test_q3()
     title('Approximation Error for sin(x) Integral')
     grid
 
-    disp("Integral of ln(x) from 0 to 1 is -1")
+    disp("-----------------------------------------------------")
+    disp("Integral of ln(x) from 0 to 1 (should evaluate to -1)")
+    fprintf("\n")
     error_list_b = cell(10, 2);
     for i = 1:20  
         target = -1;
@@ -34,7 +36,6 @@ function [y] = test_q3()
 
      % Plot error graph
     errors_b = cell2mat(error_list_b);
-    fprintf('\n Plotting graph for Error b... \n ')
     figure(2)
     plot(errors_b(:, 1), errors_b(:,2))
     xlabel('log(N)') 
@@ -42,7 +43,9 @@ function [y] = test_q3()
     title('Approximation Error for ln(x) Integral')
     grid
 
-    disp("Integral of ln(0.2(|sin(x)|) from 0 to 1 is -2.66616")
+    disp("-----------------------------------------------------")
+    disp("Integral of ln(0.2(|sin(x)|) from 0 to 1 (should evaluate to -2.66616)")
+    fprintf("\n")
     error_list_c = cell(10, 2);
     for i = 1:20  
         target = -2.66616;
@@ -53,7 +56,6 @@ function [y] = test_q3()
 
     % Plot error graph
     errors_c = cell2mat(error_list_c);
-    fprintf('\n Plotting graph for Error c... \n ')
     figure(3)
     plot(errors_c(:, 1), errors_c(:,2))
     xlabel('log(N)') 

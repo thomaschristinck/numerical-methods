@@ -43,7 +43,7 @@ function [y_test] = lagrange_interpolator()
     function[y] = multiplier(j, x_test, X)
     %   Function that finds the multiplier given row index and x_test
         [rows_x_test, cols_x_test] = size(x_test);
-        [rows_X, cols_X] = size(X)
+        [rows_X, cols_X] = size(X);
         if rows_x_test > 1 || cols_x_test > 1
             y(1:rows_x_test, 1:cols_x_test) = 1;
         else
@@ -59,7 +59,7 @@ function [y_test] = lagrange_interpolator()
 
     function[y] = interpolate(x_test, X, Y)
         [rows_x_test, cols_x_test] = size(x_test);
-        [rows_X, cols_X] = size(X)
+        [rows_X, cols_X] = size(X);
         if rows_x_test > 1 || cols_x_test > 1
             y(1:rows_x_test, 1:cols_x_test) = 1;
         else
