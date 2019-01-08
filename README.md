@@ -29,7 +29,7 @@ In MATLAB go to ```Numerical-Methods/Assignment2/Q3``` and run ```testq3```
 
 3.1.  In this part of the assignment, we interpolate magnetic field points using full-domain Lagrange polynomials and cubic Hermite polynomials. We then solve a non-linear flux equation using the Newton-Raphson method and successive substitution.
 
-In MATLAB go to ```Numerical-Methods/Assignment3/```;
+In MATLAB go to ```Numerical-Methods/Assignment3```;
 To test the lagrange polynomial interpolation, run ```lagrange_interpolation;```.
 To test the cubic hermite interpolation, run ```hermite_interpolation;```.
 To test the flux calculations via successive substitution and Newton Raphson methods, run ```newton_raphson;```.
