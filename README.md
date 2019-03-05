@@ -1,6 +1,6 @@
 # Numerical Methods in Electrical Engineering: Assignments
 
-This repository is a collection of Numerical Methods Assignments I wrote for a class at McGill. Each of these folders includes the code for an assignment, as well as a write up discussing the approach and results. 
+This repository is a collection of Numerical Methods Assignments I wrote for a class at McGill (ECSE 543). Each of these folders includes the code for an assignment, as well as a write up discussing the approach and results. 
 
 ### Assignment 1
 
